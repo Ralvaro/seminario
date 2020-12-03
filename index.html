@@ -1,76 +1,249 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Visualizacion de Datos - Seminario</title>
+  </head>
 
-<head>
-	<title>Visualizacion de Datos - Seminario</title>
-</head>
+  <body>
+    <a href="https://ibb.co/Y3bLRjM"
+      ><img
+        src="https://i.ibb.co/vHDjwzG/logo-viu-Universidad-Internacional-de-Valencia-sobre-fondo-blanco.png"
+        alt="logo-viu-Universidad-Internacional-de-Valencia-sobre-fondo-blanco"
+        border="0"
+        class="center"
+        title="Logo de la VIU"
+    /></a>
 
-<body>
-	<a href="https://ibb.co/Y3bLRjM"><img src="https://i.ibb.co/vHDjwzG/logo-viu-Universidad-Internacional-de-Valencia-sobre-fondo-blanco.png" alt="logo-viu-Universidad-Internacional-de-Valencia-sobre-fondo-blanco" border="0" class="center" title="Logo de la VIU"></a>
-
-		<h3>07MBIG Visualización de Datos</h3>
-		<h3>Visualización de datos de los delitos cometidos en la ciudad de San Francisco</h3>
-		<h3>Álvaro Rafael Pérez Entrenas</h3>
-		Url:
-		<a href="https://ralvaro-visualizacion-semiario.stackblitz.io">https://ralvaro-visualizacion-semiario.stackblitz.io</a><br />
+    <h3>07MBIG Visualización de Datos</h3>
+    <h3>
+      Visualización de datos de los delitos cometidos en la ciudad de San
+      Francisco
+    </h3>
+    <h3>Álvaro Rafael Pérez Entrenas</h3>
+    Url:
+    <a href="https://ralvaro-visualizacion-semiario.stackblitz.io"
+      >https://ralvaro-visualizacion-semiario.stackblitz.io</a
+    ><br />
     GitHub:
-		<a
-			href="https://github.com/Ralvaro/seminario">https://github.com/Ralvaro/seminario</a><br />
+    <a href="https://github.com/Ralvaro/seminario"
+      >https://github.com/Ralvaro/seminario</a
+    ><br />
 
-		<h2>Contexto</h2>
-		<p>San Francisco es conocida por uno de los monumentos más icónicos del mundo como es el puente del Golden Gate.
-			Esta ciudad es una de las más pobladas del estado de California contando con la segunda densidad de
-			población
-			más alta de EE. UU, estando solamente por debajo de Nueva York.</p>
+    <h2>Contexto</h2>
+    <p>
+      San Francisco es conocida por uno de los monumentos más icónicos del mundo
+      como es el puente del Golden Gate. Esta ciudad es una de las más pobladas
+      del estado de California contando con la segunda densidad de población más
+      alta de EE. UU, estando solamente por debajo de Nueva York.
+    </p>
 
-		<a href="https://ibb.co/wSqSbsS"><img src="https://i.ibb.co/HtytMdt/sanfracisco-ocaso-1024x683.jpg" alt="sanfracisco-ocaso-1024x683" border="0" class="center" title="El ocaso de San Francisco"></a>
+    <a href="https://ibb.co/wSqSbsS"
+      ><img
+        src="https://i.ibb.co/HtytMdt/sanfracisco-ocaso-1024x683.jpg"
+        alt="sanfracisco-ocaso-1024x683"
+        border="0"
+        class="center"
+        title="El ocaso de San Francisco"
+    /></a>
 
-			<p>Por otro lado, son muchos los crímenes que se han ido cometiendo a lo largo de los años en la ciudad de
-				San
-				Francisco, teniendo un índice de criminalidad del 52.74 en enero de 2020. Puede que esto sea provocado
-				por
-				la alta densidad de población de la zona o por otros factores externos que no son tan sencillos de
-				determinar.</p>
-			<p>En primer lugar, debemos echar la vista atrás y observar de un tiempo a esta parte como era la situación
-				en
-				la ciudad. Para ello usaremos una colección de datos provenientes del departamento de policía de San
-				Francisco que cuenta con el histórico de los casos criminales ocurridos desde 2018 hasta agosto de 2020.
-			</p>
+    <p>
+      Por otro lado, son muchos los crímenes que se han ido cometiendo a lo
+      largo de los años en la ciudad de San Francisco, teniendo un índice de
+      criminalidad del 52.74 en enero de 2020. Puede que esto sea provocado por
+      la alta densidad de población de la zona o por otros factores externos que
+      no son tan sencillos de determinar.
+    </p>
+    <p>
+      En primer lugar, debemos echar la vista atrás y observar de un tiempo a
+      esta parte como era la situación en la ciudad. Para ello usaremos una
+      colección de datos provenientes del departamento de policía de San
+      Francisco que cuenta con el histórico de los casos criminales ocurridos
+      desde 2018 hasta agosto de 2020.
+    </p>
 
-			<h2>Historico de los últimos años</h2>
-			<p>A lo largo del periodo antes mencionado podemos destacar que se han cometido un total de 407599 delitos
-				diferentes y cuya tendencia a lo largo del tiempo se muestra en la figura:</p>
+    <h2>Historico de los últimos años</h2>
+    <p>
+      A lo largo del periodo antes mencionado podemos destacar que se han
+      cometido un total de 407599 delitos diferentes y cuya tendencia a lo largo
+      del tiempo se muestra en la gráfica:
+    </p>
 
-			<h2>Tipos de delitos más frecuentes</h2>
-			<p>Podemos hacernos una idea de cuáles son los tipos de crímenes cometidos más frecuentes en la ciudad con
-				la siguiente
-				gráfica:</p>
-			<script type='text/javascript' src='https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 2560px; height: 883px;'><object class='tableauViz' width='2560' height='883' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;mysiteviu' /><param name='name' value='Seminario-GrficodeBurbujas&#47;GrficodeBurbujasdelosdelitosmsfrecuentes' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+    <a href="https://ibb.co/3Bd2TQs"
+      ><img
+        src="https://i.ibb.co/RzbfgdS/Gr-fico-de-tendencia-de-N-de-delitos-cometidos.png"
+        alt="Gr-fico-de-tendencia-de-N-de-delitos-cometidos"
+        border="0"/></a
+    ><br /><a target="_blank" href="https://es.imgbb.com/"></a><br />
 
-      <h2>Cuándo se cometen los delitos</h2>
+    <p>
+      Lo cierto es que es muy interesante la tendencia de estos últimos meses.
+      Coincidiendo con la pandemia del COVID-19 se reduce drásticamente el
+      número de delitos cometidos. Algo que tiene mucho sentido, ya que nuestro
+      estilo de vida ha cambiado radicalmente. Nos tenemos que quedar en casa y
+      no acercarnos a los demás… eso dificulta que se pueda delinquir.
+    </p>
 
-      <script type='text/javascript' src='https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 2560px; height: 883px;'><object class='tableauViz' width='2560' height='883' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;mysiteviu' /><param name='name' value='Seminario-GrficodeBurbujas&#47;GrficodeNIncidentesalolargodelashorasdelda' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+    <h2>Tipos de delitos más frecuentes</h2>
+    <p>
+      Podemos hacernos una idea de cuáles son los tipos de crímenes cometidos
+      más frecuentes en la ciudad con la siguiente gráfica:
+    </p>
 
-			<p>En la gráfica de burbujas observamos que el crimen que se ha cometido más veces ha sido el de hurto (robo
-				sin violencia), seguidos por asalto, robos a viviendas, vehículos y de otros tipos de tipos de robos a
-				diferentes propiedades. Podemos determinar que la mayoría de los delitos cometidos no tienen que ver con
-				homicidios o que causen problemas físicos a las demás personas, lo que es, dentro de lo malo, un alivio.
-			</p>
+    <a href="https://ibb.co/VSvg1R4"
+      ><img
+        src="https://i.ibb.co/yy869tj/Gr-fico-de-Burbujas-de-los-delitos-m-s-frecuentes.png"
+        alt="Gr-fico-de-Burbujas-de-los-delitos-m-s-frecuentes"
+        border="0"/></a
+    ><br /><a target="_blank" href="https://es.imgbb.com/"></a><br />
 
-			<h2>Ubicación de los crímenes</h2>
-			<p>Para poder hacernos una idea de donde se han cometido el mayor número de delitos echaremos un vistazo al
-				mapa de la ciudad en el que se representan los crímenes agrupados por cercanía y frecuencia.</p>
+    <p>
+      En la gráfica de burbujas observamos que el crimen que se ha cometido más
+      veces ha sido el de hurto (robo sin violencia), seguidos por asalto, robos
+      a viviendas, vehículos y de otros tipos de tipos de robos a diferentes
+      propiedades. Podemos determinar que la mayoría de los delitos cometidos no
+      tienen que ver con homicidios o que causen problemas físicos a las demás
+      personas, lo que es, dentro de lo malo, un alivio.
+    </p>
 
-			<iframe title="Mapa de Coordenadas de los crímenes cometidos" aria-label="Mapa" id="datawrapper-chart-jREjg"
-				src="https://datawrapper.dwcdn.net/jREjg/2/" scrolling="no" frameborder="0"
-				style="width: 0; min-width: 100% !important; border: none;" height="684"></iframe>
-			<script type="text/javascript">
-				!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-			</script>
+    <h2>Cuándo se cometen los delitos</h2>
 
-			<p>A juzgar por el mapa mostrado, aunque ha habido muchos delitos en todas partes de la ciudad, sí que hay
-				una gran concentración de ellos en la zona central hacia el noroeste de la ciudad.</p>
+    <p>
+      Sería interesante observar cuando se cometen más los delitos a lo largo de
+      la semana para identificar si es más frecuente que ocurran en fin de
+      semana por haber más actividad. En la siguiente gráfica de barras se
+      representa la cantidad de delitos cometidos agrupados en los diferentes
+      días de la semana.
 
-</body>
+      <a href="https://imgbb.com/"
+        ><img
+          src="https://i.ibb.co/cYpT55k/Grafico-de-Barras-Incidentes-a-lo-largo-de-la-semana.png"
+          alt="Grafico-de-Barras-Incidentes-a-lo-largo-de-la-semana"
+          border="0"/></a
+      ><br /><a target="_blank" href="https://es.imgbb.com/"></a><br />
+    </p>
 
+    <p>
+      Aunque no se observa una gran diferencia entre los días entre semana y los
+      fines de semana en cuanto a número de crímenes cometidos, si que podemos
+      ver que el viernes es el que más delitos se cometen, tal y como nos
+      podíamos imaginar.
+    </p>
+
+    <p>
+      Pero, ¿Cuándo se producen estos delitos? ¿Cuáles son las horas más
+      peligrosas para salir a la calle? En la siguiente gráfica se muestra la
+      progresión del número de delitos cometidos agrupados por las diferentes
+      horas del día.
+    </p>
+
+    <a href="https://ibb.co/v1kBtBK"
+      ><img
+        src="https://i.ibb.co/zsZ5k50/Gr-fico-de-N-Incidentes-a-lo-largo-de-las-horas-del-d-a.png"
+        alt="Gr-fico-de-N-Incidentes-a-lo-largo-de-las-horas-del-d-a"
+        border="0"/></a
+    ><br /><a target="_blank" href="https://es.imgbb.com/"></a><br />
+
+    <p>
+      En la anterior gráfica vemos como los crímenes suelen tener una subida a
+      las 12 de la mañana, bajan un poco al medio día para luego subir a media
+      tarde y bajar de nuevo hasta las 12 de la noche.
+    </p>
+
+    <h2>Ubicación de los crímenes</h2>
+    <p>
+      Para poder hacernos una idea de donde se han cometido el mayor número de
+      delitos echaremos un vistazo al mapa de la ciudad en el que se representan
+      los crímenes agrupados por cercanía y frecuencia.
+    </p>
+
+    <iframe
+      title="Mapa de Coordenadas de los crímenes cometidos"
+      aria-label="Mapa"
+      id="datawrapper-chart-jREjg"
+      src="https://datawrapper.dwcdn.net/jREjg/2/"
+      scrolling="no"
+      frameborder="0"
+      style="width: 0; min-width: 100% !important; border: none;"
+      height="684"
+    ></iframe>
+    <script type="text/javascript">
+      !(function() {
+        "use strict";
+        window.addEventListener("message", function(a) {
+          if (void 0 !== a.data["datawrapper-height"])
+            for (var e in a.data["datawrapper-height"]) {
+              var t =
+                document.getElementById("datawrapper-chart-" + e) ||
+                document.querySelector("iframe[src*='" + e + "']");
+              t && (t.style.height = a.data["datawrapper-height"][e] + "px");
+            }
+        });
+      })();
+    </script>
+
+    <p>
+      A juzgar por el mapa mostrado, aunque ha habido muchos delitos en todas
+      partes de la ciudad, sí que hay una gran concentración de ellos en la zona
+      central hacia el noroeste de la ciudad.
+    </p>
+
+    <h3>Conclusiones Finales</h3>
+
+    <p>
+      Lo más destacable de este análisis realizado sobre los crímenes de la
+      ciudad de San Francisco es el como ha cambiado la tendencia y el número de
+      delitos cometidos en los últimos meses. Algo bueno que podemos sacar de
+      esto, al menos. Sin embargo, ha sorprendido también que no haya tanta
+      diferencia en el número de delitos cometidos cuando son en fin de semana o
+      entre semana. ¿Puede que esto también haya sido provocado por la pandemia?
+      ¿También puede que se haya visto afectadas las horas a las que se cometen?
+      Para resolver a estas cuestiones haría falta consultar los datos más
+      antiguos de forma más exhaustiva y es un buen planteamiento de trabajo a
+      futuro.
+    </p>
+    <p>
+      Por otro lado, tenemos el mapa de donde se han cometido mayor número de
+      crímenes, pero tampoco se pueden sacar conclusiones precipitadas para
+      poder decir que un barrio determinado de la ciudad es peligroso por el
+      simple hecho de que durante los últimos 2 años se han cometido más
+      delitos. No es esa la finalidad. Habría que mirar más factores
+      socioambientales relacionados con los barrios afectados.
+    </p>
+
+    <h3>Tecnologías utilizadas</h3>
+
+    <p>
+      ¿Por qué se ha usado Tableau para este informe? Por ofrecer la facilidad
+      de crear gráficas de manera muy rápida. Esto ha dado la oportunidad de
+      probar diferentes formas de representar los datos. Aunque tiene la
+      característica de poder compartir los gráficos directamente en el
+      servidor, se ha decidido utilizar imágenes porque no se ha logrado poder
+      mostrar los gráficos sin que el usuario que los visualice inicie sesión en
+      Tableau.
+    </p>
+    <p>
+      ¿Por qué se ha usado DataWrapper? Esta herramienta ofrece bondades muy
+      parecidas a Tableau, sin embargo, la razón principal de haber usado esta
+      herramienta es la flexibilidad que ofrece para trabajar con mapas.
+      Habiendo sido relativamente sencillo importar los datos y representar las
+      coordenadas de manera correcta.
+    </p>
+
+    <h3>Bibliografía</h3>
+    <p>
+      Police Department Incident Reports: 2018 to Present | DataSF | City and
+      County of San Francisco. (2020, 3 diciembre). DataSF.
+      <a
+        href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783"
+        >https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783</a
+      ><br />
+    </p>
+    <p>
+      U. (2020, enero 4). Jorge Macías,. Univision.
+      <a
+        href="https://www.univision.com/noticias/estados-unidos/la-nueva-normalidad-los-niveles-de-criminalidad-en-la-bahia-de-san-francisco-siguieron-a-la-baja-en-2019"
+        >https://www.univision.com/noticias/estados-unidos/la-nueva-normalidad-los-niveles-de-criminalidad-en-la-bahia-de-san-francisco-siguieron-a-la-baja-en-2019</a
+      ><br />
+    </p>
+  </body>
 </html>
